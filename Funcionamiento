@@ -1,0 +1,9 @@
+El funcionamiento se basa en una salida digital positiva de voltaje sobre el led que queremos encender.
+En este caso, al tratarse de un semaforo buscamos que se encienda un Led rojo para detener el paso de coches
+,segundos mas tarde una ambar y para finalizar una verde para reanudarlo. 
+Al poner esto en el void loop() {} se repetira ciclicamente .
+Si aumentamos la dificultad añadiremos un semaforo para peatones,el cual no es mas que un led rojo que se encendera cuando
+el led del semaforo de coches este en ambar o verde, y uno verde que se encendera cuando la roja del semaforo de 
+coches este encendida.
+Ademas,añadiremos un contador para el semaforo verde de peatones que contara de 9 hacia 1,comenzando a parpadear
+en el 3 para que los peatones circulen mas deprisa.

@@ -9,7 +9,7 @@ Semaforo
 
 void setup() {                
 
-  pinMode(13, OUTPUT);   
+  pinMode(13, OUTPUT);  //Declaramos cada pin como salida 
   pinMode(12, OUTPUT);  
   pinMode(11, OUTPUT);  
   pinMode(10, OUTPUT);  
@@ -26,14 +26,13 @@ void setup() {
 }
 
 void loop() {
-digitalWrite(11, HIGH); 
-// Led rojo encendido
+digitalWrite(11, HIGH); // Led rojo coches encendido
 
-  if( digitalRead (11 == HIGH))
+  if( digitalRead (11 == HIGH)) //Si el led rojo coches esta encendido encenderemos el verde de peatones
   {
  
-  digitalWrite(10, HIGH); // Led verde encendido
-  digitalWrite(7, HIGH); //9
+  digitalWrite(10, HIGH); // Led verde peatones encendido
+  digitalWrite(7, HIGH); // Encendemos y apagamos el segmento 9 del contador del semaforo de peatones
   digitalWrite(8, HIGH);
   digitalWrite(2, HIGH);
   digitalWrite(6, HIGH);
@@ -45,7 +44,7 @@ digitalWrite(11, HIGH);
   digitalWrite(6, LOW);
   digitalWrite(5, LOW);  
 
-  digitalWrite(7, HIGH); //8
+  digitalWrite(7, HIGH); //Encendemos y apagamos el segmento 8 del contador del semaforo de peatones
   digitalWrite(8, HIGH);
   digitalWrite(2, HIGH);
   digitalWrite(3, HIGH);
@@ -53,7 +52,7 @@ digitalWrite(11, HIGH);
   digitalWrite(6, HIGH);
   digitalWrite(5, HIGH);
   delay(1000); 
-  digitalWrite(7, LOW); //8
+  digitalWrite(7, LOW); 
   digitalWrite(8, LOW);
   digitalWrite(2, LOW);
   digitalWrite(3, LOW);
@@ -61,22 +60,22 @@ digitalWrite(11, HIGH);
   digitalWrite(6, LOW);
   digitalWrite(5, LOW);
   
-  digitalWrite(7, HIGH); //7
+  digitalWrite(7, HIGH); //Encendemos y apagamos el segmento 7 del contador del semaforo de peatones
   digitalWrite(8, HIGH);
   digitalWrite(2, HIGH);
   delay(1000);
-   digitalWrite(7, LOW); //7
+   digitalWrite(7, LOW); 
   digitalWrite(8, LOW);
   digitalWrite(2, LOW);
   
-    digitalWrite(7, HIGH); //6
+    digitalWrite(7, HIGH); //Encendemos y apagamos el segmento 6 del contador del semaforo de peatones
   digitalWrite(2, HIGH);
   digitalWrite(3, HIGH);
   digitalWrite(4, HIGH);
   digitalWrite(6, HIGH);
   digitalWrite(5, HIGH);
   delay(1000);
-      digitalWrite(7, LOW); //6
+      digitalWrite(7, LOW); 
   digitalWrite(2, LOW);
   digitalWrite(3, LOW);
   digitalWrite(4, LOW);
@@ -84,46 +83,43 @@ digitalWrite(11, HIGH);
   digitalWrite(5, LOW);
   
   
-    digitalWrite(7, HIGH); //5
+    digitalWrite(7, HIGH); //Encendemos y apagamos el segmento 5 del contador del semaforo de peatones
   digitalWrite(2, HIGH);
   digitalWrite(3, HIGH);
   digitalWrite(6, HIGH);
   digitalWrite(5, HIGH);
   delay(1000);
-      digitalWrite(7, LOW); //5
+      digitalWrite(7, LOW); 
   digitalWrite(2, LOW);
   digitalWrite(3, LOW);
   digitalWrite(6, LOW);
   digitalWrite(5, LOW);
 
-  digitalWrite(8, HIGH);   //4
+  digitalWrite(8, HIGH);   //Encendemos y apagamos el segmento 4 del contador del semaforo de peatones
   digitalWrite(2, HIGH);
   digitalWrite(6, HIGH);
     digitalWrite(5, HIGH);
   delay(1000);
-    digitalWrite(8, LOW);   //4
+    digitalWrite(8, LOW);   
   digitalWrite(2, LOW);
   digitalWrite(6, LOW);
     digitalWrite(5, LOW);
   
   
-  
-  
-  
-    digitalWrite(7, HIGH); //3
+    digitalWrite(7, HIGH); //Encendemos y apagamos el segmento 3 del contador del semaforo de peatones
   digitalWrite(8, HIGH);
   digitalWrite(2, HIGH);
   digitalWrite(3, HIGH);
   digitalWrite(5, HIGH);
   digitalWrite(10, LOW);
   delay(500);
-      digitalWrite(7, LOW); //3
+      digitalWrite(7, LOW); 
   digitalWrite(8, LOW);
   digitalWrite(2, LOW);
   digitalWrite(3, LOW);
   digitalWrite(5, LOW);
 
-      digitalWrite(7, HIGH); //3
+      digitalWrite(7, HIGH); // Al acabarse el tiempo encenderemos y apagaremos el numero 3,2 y 1 de forma intermitente 
   digitalWrite(8, HIGH);
   digitalWrite(2, HIGH);
   digitalWrite(3, HIGH);
@@ -136,11 +132,7 @@ digitalWrite(11, HIGH);
   digitalWrite(3, LOW);
   digitalWrite(5, LOW);
   
-  
-  
-  
-  
-  
+
   
     digitalWrite(7, HIGH); //2
   digitalWrite(8, HIGH);
@@ -182,40 +174,34 @@ digitalWrite(11, HIGH);
     digitalWrite(8, LOW); //1
   digitalWrite(2, LOW);
   
+ 
   
-  
-  
-  
-  
-  
-  
-  
-  digitalWrite(10, LOW);
+  digitalWrite(10, LOW); //Apagamos el led verde peatones
  
      
  
   }  
-  digitalWrite(11, LOW);  
+  digitalWrite(11, LOW);  //Apagamos el led rojo coches
   
 
-digitalWrite(13, HIGH); // Led verde encendido
-   if( digitalRead (11 == HIGH))
+digitalWrite(13, HIGH); // Led verde coches encendido
+   if( digitalRead (11 == HIGH)) 
   {
-  digitalWrite(9, HIGH); // Led rojo encendido
+  digitalWrite(9, HIGH); // Led rojo peatones encendido
   delay(7000);             
   digitalWrite(9, LOW);
   }              
-  digitalWrite(13, LOW);  
+  digitalWrite(13, LOW);  //Led verde coches apagada
   
   
 digitalWrite(12, HIGH); // Led ambar encendido
    if( digitalRead (11 == HIGH))
   {
-  digitalWrite(9, HIGH); // Led rojo encendido
+  digitalWrite(9, HIGH); // Led rojo peatones encendido
   delay(3000);       
   digitalWrite(9, LOW);
 }           
-  digitalWrite(12, LOW);  
+  digitalWrite(12, LOW);  //Apagamos led ambar
   
   
 

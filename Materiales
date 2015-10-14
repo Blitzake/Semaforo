@@ -1,0 +1,10 @@
+1 Arduino Uno
+2 Leds rojos
+2 Leds Verdes
+1 Led amarillo
+12 resistencias de 220 Ohm, aunque se podrian simplificar por:
+      1 resistencia de 75 Ohm(73.33 Necesitariamos) para el semaforo de coches
+      1 resistencia de 110 Ohm para el semaforo de peatones
+      1 resistencia de 31.6 Ohm para el Contador del semaforo de peatones
+1  Display de catodo común
+Cables
